@@ -37,8 +37,10 @@ No modules.
 | <a name="input_autoscale_group_size"></a> [autoscale\_group\_size](#input\_autoscale\_group\_size) | Default size of autoscale group. | `number` | n/a | yes |
 | <a name="input_environment"></a> [environment](#input\_environment) | (Required) Environment of all resources | `string` | n/a | yes |
 | <a name="input_image_id"></a> [image\_id](#input\_image\_id) | The image ID for the Autoscale Group instances | `string` | n/a | yes |
+| <a name="input_instance_tags"></a> [instance\_tags](#input\_instance\_tags) | Additional tags for the EC2 instances in the autoscaling group. These will be merged with the default tags. | `map(string)` | `{}` | no |
 | <a name="input_instance_type"></a> [instance\_type](#input\_instance\_type) | Instance type for Autoscale group | `string` | `"t3.micro"` | no |
 | <a name="input_prefix"></a> [prefix](#input\_prefix) | (Required) Prefix to use for all resources in this module. | `string` | n/a | yes |
+| <a name="input_user_data_contents"></a> [user\_data\_contents](#input\_user\_data\_contents) | User data contents to be passed in the launch template | `string` | n/a | yes |
 | <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id) | (Required) ID of the VPC where resources will be created. | `string` | n/a | yes |
 | <a name="input_vpc_public_subnets"></a> [vpc\_public\_subnets](#input\_vpc\_public\_subnets) | (Required) List of public subnet IDs for the Autoscale group and NLB | `list(string)` | n/a | yes |
 
